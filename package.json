@@ -1,0 +1,44 @@
+{
+  "name": "kits-ai-cli",
+  "version": "1.0.0",
+  "description": "A comprehensive CLI tool for Kits AI API featuring voice conversion, TTS, vocal separation, and more",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "kits-cli": "./index.js"
+  },
+  "scripts": {
+    "start": "node -r dotenv/config index.js",
+    "start:prod": "node index.js",
+    "quick-start": "node -r dotenv/config quick-start.js",
+    "demo": "node -r dotenv/config examples/demo.js",
+    "examples": "node -r dotenv/config examples/basic-usage.js",
+    "dev": "node -r dotenv/config index.js",
+    "help": "node -r dotenv/config index.js help",
+    "interactive": "node -r dotenv/config index.js interactive",
+    "models": "node -r dotenv/config index.js models list",
+    "setup": "node -r dotenv/config index.js setup",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "kits-ai",
+    "voice-conversion",
+    "text-to-speech",
+    "vocal-separation",
+    "cli",
+    "audio"
+  ],
+  "author": "Joel J Mathew",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "chalk": "^5.3.0",
+    "cli-kit": "^2.1.1",
+    "dotenv": "^16.5.0",
+    "form-data": "^4.0.0",
+    "fs-extra": "^11.2.0",
+    "inquirer": "^9.2.12",
+    "node-fetch": "^3.3.2",
+    "ora": "^8.0.1"
+  }
+}
